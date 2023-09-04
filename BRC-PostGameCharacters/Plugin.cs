@@ -28,9 +28,9 @@ namespace BRC_PostGameCharacters
                 if ((int)player.character != 12) __instance.selectableCharacters.Add(Characters.headMan);
                 if ((int)player.character != 25) __instance.selectableCharacters.Add(Characters.legendMetalHead);
                 if ((int)player.character != 24) __instance.selectableCharacters.Add(Characters.eightBallBoss);
-            }
 
-            __instance.Shuffle(__instance.selectableCharacters);
+                __instance.Shuffle(__instance.selectableCharacters);
+            }
         }
     }
 }

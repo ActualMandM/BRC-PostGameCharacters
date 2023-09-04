@@ -1,0 +1,9 @@
+{
+  "name": "BRC_PostGameCharacters",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/ActualMandM/BRC-PostGameCharacters",
+  "description": "Allow you to access characters that normally can't be unlocked in post game. ",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "BRC_PostGameCharacters",
-  "version_number": "1.0.1",
+  "version_number": "1.0.2",
   "website_url": "https://github.com/ActualMandM/BRC-PostGameCharacters",
   "description": "Allow you to access characters at the Cypher that normally can't be unlocked in post game.",
   "dependencies": [

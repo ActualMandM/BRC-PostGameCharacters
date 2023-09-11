@@ -5,21 +5,21 @@ using Reptile;
 
 namespace BRC_PostGameCharacters
 {
-	[BepInPlugin("com.MandM.BRC-PostGameCharacters", "BRC-PostGameCharacters", "1.0.2")]
-	[BepInProcess("Bomb Rush Cyberfunk.exe")]
+    [BepInPlugin("com.MandM.BRC-PostGameCharacters", "BRC-PostGameCharacters", "1.0.2")]
+    [BepInProcess("Bomb Rush Cyberfunk.exe")]
 
-	public class Plugin : BaseUnityPlugin
-	{
+    public class Plugin : BaseUnityPlugin
+    {
         public static ConfigEntry<bool> JetpacklessFaux = null!;
 
         public void Awake()
-		{
+        {
             JetpacklessFaux = Config.Bind("General", "JetpacklessFaux", false, "Adds jetpackless Faux to the Cypher.");
 
             Harmony harmony = new Harmony("MandM.BRC-PostGameCharacters.Harmony");
-			harmony.PatchAll();
-		}
-	}
+            harmony.PatchAll();
+        }
+    }
 
     [HarmonyPatch(typeof(CharacterSelect))]
     public class CharacterSelectPatch

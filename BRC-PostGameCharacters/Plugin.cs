@@ -5,7 +5,7 @@ using Reptile;
 
 namespace BRC_PostGameCharacters
 {
-    [BepInPlugin("com.MandM.BRC-PostGameCharacters", "BRC-PostGameCharacters", "1.0.3")]
+    [BepInPlugin("com.MandM.BRC-PostGameCharacters", "BRC-PostGameCharacters", "1.0.4")]
     [BepInProcess("Bomb Rush Cyberfunk.exe")]
 
     public class Plugin : BaseUnityPlugin
@@ -30,9 +30,17 @@ namespace BRC_PostGameCharacters
         {
             if (Story.GetCurrentObjectiveInfo().chapter == Story.Chapter.CHAPTER_6)
             {
-                if ((int)player.character != 12) __instance.selectableCharacters.Add(Characters.headMan);
-                if ((int)player.character != 24) __instance.selectableCharacters.Add(Characters.eightBallBoss);
-                if (Plugin.JetpacklessFaux.Value && (int)player.character != 23) __instance.selectableCharacters.Add(Characters.headManNoJetpack);
+                if ((int)player.character != 12)
+                    __instance.selectableCharacters.Add(Characters.headMan);
+
+                if ((int)player.character != 25 && !__instance.selectableCharacters.Contains((Characters)25))
+                    __instance.selectableCharacters.Add(Characters.legendMetalHead);
+
+                if ((int)player.character != 24)
+                    __instance.selectableCharacters.Add(Characters.eightBallBoss);
+
+                if (Plugin.JetpacklessFaux.Value && (int)player.character != 23)
+                    __instance.selectableCharacters.Add(Characters.headManNoJetpack);
 
                 __instance.Shuffle(__instance.selectableCharacters);
             }

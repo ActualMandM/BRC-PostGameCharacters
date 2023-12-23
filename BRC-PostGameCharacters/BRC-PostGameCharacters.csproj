@@ -7,6 +7,10 @@
 	  <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <ManagedPath>$(BRCPath)/Bomb Rush Cyberfunk_Data/Managed</ManagedPath>
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
@@ -22,9 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-	<Reference Include="Assembly-CSharp">
-	  <HintPath>Assemblies\Assembly-CSharp.dll</HintPath>
-	</Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedPath)/Assembly-CSharp.dll</HintPath>
+        <Private>false</Private>
+        <Publicize>true</Publicize>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

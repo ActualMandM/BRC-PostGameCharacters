@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BRC_PostGameCharacters", "BRC_PostGameCharacters\BRC_PostGameCharacters.csproj", "{34B27F04-7A5C-4F38-B8E8-F7D37F74E4DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34B27F04-7A5C-4F38-B8E8-F7D37F74E4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B27F04-7A5C-4F38-B8E8-F7D37F74E4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B27F04-7A5C-4F38-B8E8-F7D37F74E4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B27F04-7A5C-4F38-B8E8-F7D37F74E4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {698382A7-9701-4802-9D4B-D24FF5D4639A}
+	EndGlobalSection
+EndGlobal

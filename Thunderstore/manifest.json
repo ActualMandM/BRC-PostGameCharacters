@@ -1,8 +1,8 @@
 {
   "name": "BRC_PostGameCharacters",
-  "version_number": "1.0.4",
+  "version_number": "1.0.5",
   "website_url": "https://github.com/ActualMandM/BRC-PostGameCharacters",
-  "description": "Allow you to access characters at the Cypher that normally can't be unlocked in post game.",
+  "description": "Allows you to access characters at the Cypher that normally can't be unlocked in post game.",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2100"
   ]

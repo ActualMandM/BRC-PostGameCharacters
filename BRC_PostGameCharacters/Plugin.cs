@@ -31,23 +31,28 @@ namespace BRC_PostGameCharacters
             if (Story.GetCurrentObjectiveInfo().chapter == Story.Chapter.CHAPTER_6)
             {
                 // Faux
-                if ((int)player.character != 12)
+                if (IsValid(Characters.headMan, __instance, player))
                     __instance.selectableCharacters.Add(Characters.headMan);
 
                 // Red Felix
-                if ((int)player.character != 25 && !__instance.selectableCharacters.Contains((Characters)25))
+                if (IsValid(Characters.legendMetalHead, __instance, player))
                     __instance.selectableCharacters.Add(Characters.legendMetalHead);
 
                 // DOT.EXE (Boss)
-                if ((int)player.character != 24)
+                if (IsValid(Characters.eightBallBoss, __instance, player))
                     __instance.selectableCharacters.Add(Characters.eightBallBoss);
 
                 // Faux (boostpackless)
-                if (Plugin.BoostpacklessFaux.Value && (int)player.character != 23)
+                if (Plugin.BoostpacklessFaux.Value && IsValid(Characters.headManNoJetpack, __instance, player))
                     __instance.selectableCharacters.Add(Characters.headManNoJetpack);
 
                 __instance.Shuffle(__instance.selectableCharacters);
             }
+        }
+
+        public static bool IsValid(Characters character, CharacterSelect __instance, Player player)
+        {
+            return !__instance.selectableCharacters.Contains(character) && player.character != character;
         }
     }
 }
